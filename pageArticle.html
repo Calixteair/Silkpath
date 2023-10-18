@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SilkPath</title>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="style/pageitem.css">
+    <link rel="stylesheet" href="style/footer.css">
+    <link rel="stylesheet" href="style/navabr.css">
+    <link rel="shortcut icon" href="image/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">  
+</head>
+<body>
+    <div class="corps">
+
+        <nav class="menuNavigation">
+
+            <a href="index.html" class="marque"><p>Silk </p> <p> Path</p></a>
+    
+                <div class="container" id="burger">
+                    <div class="elementGauche">
+                        <a href="boutique.html" target="_blank" class="premierEl">Boutique</a>
+                        <a href="https://fr.wikipedia.org/wiki/Silk_road" target="_blank">Histoire</a>
+                        <a href="https://fr.wikipedia.org/wiki/Silk_road" target="_blank">A propos</a>
+                        <span class="loupe">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="16px" height="16px" role="img" fill = "currentColor">
+                                <path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/>
+                            </svg><span class="desactivated">Search</span></span>
+        
+                    </div>
+        
+                    <div class="elementDroite">
+                        <a href="SilkPath_cart01.html">
+                            <span class="panier">    
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="16px" height="16px" role="img" fill = "currentColor">
+                            <path d="M160 112c0-35.3 28.7-64 64-64s64 28.7 64 64v48H160V112zm-48 48H48c-26.5 0-48 21.5-48 48V416c0 53 43 96 96 96H352c53 0 96-43 96-96V208c0-26.5-21.5-48-48-48H336V112C336 50.1 285.9 0 224 0S112 50.1 112 112v48zm24 96c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24zm200-24c0 13.3-10.7 24-24 24s-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24z"/>
+                            </svg>3</span>
+                         </a>
+                        <a href="#" class="dernierEl">Login</a>    
+                    </div> 
+                </div>
+                <img class="burger"  src="image/accueil/burger.png" onclick="deroulant()" width = "30" alt="menu burger">
+                <script>
+                    function deroulant(){
+                        document.getElementById("burger").classList.toggle("activederoulant");
+                    }
+                </script>
+        </nav>
+
+
+         <!-- navbar -->
+        <div class="page">
+
+            
+            <!-- partie image de la page  -->
+
+            <div class="imgarticle">
+                <div class="grosseimage" id="0">
+                    <button  class="bnext2"><img class="bnext" onclick="next()" src="image/Vector.png" alt="image de l'article"></button>
+                </div>
+                <div class="listeimg">
+                    <button onclick="img1()" class="bc"><img src="image/blanc/Backpack-back.png" alt="image de l'article" class="img1" id="1"></button>
+                    <button onclick="img2()" class="bc"><img src="image/blanc/Backpack-front.png" alt="image de l'article" class="img2" id="2"></button>
+                    <button onclick="img3()" class="bc"><img src="image/blanc/Backpack-porter.png" alt="image de l'article" class="img3" id="3"></button>  
+                </div>
+            </div>
+
+            <!-- partie information du produit  -->
+
+            <div class="infoproduit">
+                <h3 class="name">Sac à dos - Camel Edition</h3>
+
+
+                <!-- prix et description -->
+                <div class="data">
+                    <div class="prix">
+                        <strong> <span id="numberp">65</span> €</strong>
+                    </div>
+                    <div class="description">
+                        Le Sac à dos Camel Edition® est un sac de 20 litres. Il est parfait pour être utilisé comme sac quotidien : sa composition en matériaux résistants et le savoir-faire de Silk Path® lui assurent une longue durée de vie. Disponible en plusieurs modèles, sauf stock épuisé.
+                    </div>
+                </div>
+
+                <!-- quantité et taille -->
+                <div class="number">
+
+                    <div class="compteur">
+                        <div class="moins">
+                            <button onclick="moins()">
+                                -
+                            </button>
+                        </div>
+                        <div id="counting"></div>
+                        <div class="plus">
+                            <button onclick="plus()">
+                                +
+                            </button>
+                        </div>
+                    </div>
+
+                    <select id="select" aria-label="Default select example" onchange="selectedd()">
+                        <option selected value="0">selectionnez une couleur</option>
+                        <option value="1">blanc</option>
+                        <option value="2">noir</option>
+                        <option value="3">rouge</option>
+                        <option value="4">vert</option>
+                    </select>
+                </div>
+
+                <div class="achatbuton">
+                    <button onclick="buy()" class="buy achat ba">ajouter au panier</button>
+        
+                    <button onclick="achat()" class="card ba"> acheter maintenant</button>
+                </div>      
+            </div>
+
+
+
+            <!-- bouton popup -->
+            <!-- popup du panier -->
+            <div class="buypop" id="buypop">
+                <div class="contentachat">
+                    <div class="toppopb" >
+                        <div class="none"></div>
+                            <span class="txtpanier"><strong>L'article a bien été ajouté au panier</strong> </span>
+                        <div class="rmbuy none" onclick="removebuy()"> <img class="croix" src="image/croix.png" alt="croix de fermeture"></div>
+                    </div>
+                    <div class="recap">
+                        <div class="imgbox">
+                            <img class="imgrecap" id="imgrecap" src="image/blanc/Backpack-front.png" alt="image de l'article">
+                        </div>
+                        <div class="recaptxt">
+                            <div class="speccommande">
+                                <h3 >type de produit : Sac a dos SilkPath</h3>
+                            </div>
+                            <div class="tests">
+                                <div class="coutrecap">
+                                    <div class="printp">vous avez choisi la couleur :<span class="recaptaille" id="recaptaille"></span></div> 
+                                    <div class="printp"> prix unitaire : <span class="punit" id="punit"></span></div> 
+                                    <div class="printp"> prix total : <span class="prixtot" id="prixtot"></span></div>
+                                </div>
+                            </div>
+                                <div class="boutonsecondaire">
+                                    <a class="backbuy btnsmin btnbuy" href="boutique.html">continuer les achats</a>
+                                    <a class="btnsmin btnbuy" href="SilkPath_cart01.html">voir le panier</a>
+                                </div>
+          
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- popup pour payer directement -->
+            <div class="achatpop" id="achatpop">
+                <div class="contentachat contentadd">
+                    <div class="toppopb" >
+                        <div class="none"></div>
+                            <span class="txtpanier"><strong>Acheter l'article</strong> </span>
+                        <div class="rmachat none" onclick="removeachat()"> <img class="croix" src="image/croix.png" alt="croix de fermeture"></div>
+                    </div>   
+                    <div class="recaptxt rt1">
+                        <div class="rt2">
+                            <div class="speccommande">
+                                <h3 >type de produit : Sac a dos SilkPath</h3>
+                            </div>
+                            <div class="tests">      
+                                <div class="coutrecap">
+                                    <div class="printp">vous avez choisi la couleur :<span class="recaptaille" id="recaptaille2"></span></div> 
+                                    <div class="printp"> prix unitaire : <span class="punit2" id="punit2"></span></div> 
+                                    <div class="printp"> prix total : <span class="prixtot" id="prixtot2"></span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="garde">
+                        Attention, nous ne sommes pas responsables de la mise en production de votre commande ni de la livraison. <br> Autrement dis vous n'aurez rien. <br> Mais vous pouvez quand même payer le montant que vous souhaité.                    </div>
+                    <span class="rt1">
+                        <a class="btnsmin btnachat" href="https://paypal.me/dropcalixteair?country.x=FR&locale.x=fr_FR">payer la commande</a>
+                    </span>
+                </div>
+            </div>
+            <!-- fin popup payer directement -->
+        </div>
+    </div>
+
+    <hr>
+        <!-- footer -->
+  <footer class="footer">
+          <div class="content">
+              <h5>Inscrivez-vous à la Newsletter !</h5>
+              <p>
+                  Soyez au courant de nos dernières nouveautés, peut-être seriez vous chanceux d'être présent à une vente limitée ?!
+              </p>
+              <form>
+                  <div class="inputContainer">
+                      <input type="text" class="input" id="mail" required>
+                      <label for="mail" class="label">Adresse E-mail</label>
+                  </div>
+                  <div class="valider">
+                    <button class="btn41-43 btn-43">
+                      Sign Up
+                    </button>
+                  </div>
+              </form>
+          </div>
+          <div class="content-footer">
+              <div class="content">
+                  <h6>Boutique</h6>
+                  <ul class="footer-links">
+                      <li><a href="#">Homme</a></li>
+                      <li><a href="#">Femme</a></li>
+                      <li><a href="#">Enfant</a></li>
+                      <li><a href="#">Accessoires</a></li>
+                      <li><a href="#">Décorations</a></li>
+                  </ul>
+              </div>
+              <div class="content">
+                  <h6>Aide</h6>
+                  <ul class="footer-links">
+                      <li><a href="#">Centre d'aide</a></li>
+                      <li><a href="#">Suivi de commande</a></li>
+                      <li><a href="#">Tableau des Tailles</a></li>
+                      <li><a href="#">Retour et Garantie</a></li>
+                      <li><a href="#">Contactez-Nous</a></li>
+                  </ul>
+              </div>
+              <div class="content">
+                  <h6>A Propos</h6>
+                  <ul class="footer-links">
+                  <li><a href="#">A Propos de Nous</a></li>
+                  <li><a href="#">Responsabilité</a></li>
+                  <li><a href="#">Apprenez notre histoire</a></li>
+                  </ul>
+              </div>
+          </div>
+  </footer>
+    <script src="style/pageitem.js"></script>
+</body>
+</html>

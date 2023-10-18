@@ -1,0 +1,493 @@
+<!-- Projet Silk-Path -->
+<!-- Page 2 (card item) -->
+<!-- by Peyrous Yonnis -->
+<!-- navbar by Goussot Théo & footer by Nezzar Dalia -->
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style/style2.css">
+    <link rel="stylesheet" type="text/css" href="style/footer.css">
+    <link rel="shortcut icon" href="image/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="style/navabr.css">
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">  
+    <title>Products</title>
+</head>
+<body>
+
+
+    <nav class="menuNavigation">
+
+        <a href="index.html" class="marque"><p>Silk</p><p>Path</p></a>
+
+            <div class="container" id="burger">
+                <div class="elementGauche">
+                    <a href="boutique.html" target="_blank" class="premierEl">Boutique</a>
+                    <a href="https://fr.wikipedia.org/wiki/Silk_road" target="_blank">Histoire</a>
+                    <a href="https://fr.wikipedia.org/wiki/Silk_road" target="_blank">A propos</a>
+                    <span class="loupe">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="16px" height="16px" role="img" fill = "currentColor">
+                            <path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/>
+                        </svg><span class="desactivated">Search</span></span>
+    
+                </div>
+    
+                <div class="elementDroite">
+                    <a href="SilkPath_cart01.html">
+                        <span class="panier">    
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="16px" height="16px" role="img" fill = "currentColor">
+                        <path d="M160 112c0-35.3 28.7-64 64-64s64 28.7 64 64v48H160V112zm-48 48H48c-26.5 0-48 21.5-48 48V416c0 53 43 96 96 96H352c53 0 96-43 96-96V208c0-26.5-21.5-48-48-48H336V112C336 50.1 285.9 0 224 0S112 50.1 112 112v48zm24 96c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24zm200-24c0 13.3-10.7 24-24 24s-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24z"/>
+                        </svg>3</span>
+                     </a>
+                    <a href="#" class="dernierEl">Login</a>    
+                </div> 
+            </div>
+            <img class="burger"  src="image/accueil/burger.png" onclick="deroulant()" width = "30" alt="menu">
+            <script>
+                function deroulant(){
+                    document.getElementById("burger").classList.toggle("activederoulant");
+                }
+            </script>
+    </nav>
+
+
+
+    <div class="entete">
+        <div class="entete_text">
+            <h1>Silk Path</h1>
+            <p>Découvrez nos produits phares et les favoris de nos clients! Du plus simple au plus extraordinaire, naviguez à travers une gamme de choix à tous les niveaux et à tous les prix.</p>
+        </div>
+    </div>
+
+    <div class="container01">
+        <div class="f0">
+            <div class="filtre">
+                <div class="topFiltre">
+                    <h2>Filtre</h2>
+                    <a class="reset" href="">Reset</a>
+                </div>
+            
+                <h4 class="categorie">Catégorie :</h4>
+
+                <div class="F1">
+                    <div class="form-check">
+                        <div class="input">
+                            <input type="checkbox">
+                        </div>
+                        <label>Green Camelus Dromedarius</label>
+                    </div>
+
+                    <div class="form-check">
+                        <div class="input">
+                            <input type="checkbox" >
+                        </div>
+                        <label>Porté clé GCD</label>
+                    </div>
+
+                    <div class="form-check">
+                        <div class="input">
+                            <input type="checkbox">
+                        </div>
+                        <label>Tasses GCD</label>
+                    </div>
+
+                    <div class="form-check">
+                        <div class="input">
+                            <input type="checkbox">
+                        </div>
+                        <label>Figurine GCD</label>
+                    </div>
+
+                    <div class="form-check">
+                        <div class="input">
+                            <input type="checkbox" >
+                        </div>
+                        <label>T-shirt GCD</label>
+                    </div>
+
+                    <div class="form-check">
+                        <div class="input">
+                            <input type="checkbox" >
+                        </div>
+                        <label>Briquet GCD</label>
+                    </div>
+
+                    <div class="form-check">
+                        <div class="input">
+                            <input type="checkbox" >
+                        </div>
+                        <label>Casquette GCD</label>
+                    </div>
+
+                    <div class="form-check">
+                        <div class="input">
+                            <input type="checkbox">
+                        </div>
+                        <label>Etui GCD</label>
+                    </div>
+
+                    <div class="form-check">
+                        <div class="input">
+                            <input type="checkbox" >
+                        </div>
+                        <label>Selle GCD</label>
+                    </div>
+
+                    <div class="form-check">
+                        <div class="input">
+                            <input type="checkbox" >
+                        </div>
+                        <label>Rennes GCD</label>
+                    </div>
+
+                    <div class="form-check">
+                        <div class="input">
+                            <input type="checkbox">
+                        </div>
+                        <label>Sac à dos GCD</label>
+                    </div>
+                </div>
+
+
+                <h4 class="categorie">Colors :</h4>
+
+                <div class="F2">
+                    <div class="catColor">
+                        <div class="fcolor" style="background-color: green;">
+                            <div class="check" id="c01" onclick="check1()" >
+                                <img class="imgCheck" src="image/check.png" alt="check_valid">
+                            </div>
+                        </div>
+
+                        <div class="fcolor" style="background-color: #228665;">
+                            <div class="check" id="c02" onclick="check2()">
+                                <img class="imgCheck" src="image/check.png" alt="check_valid">
+                            </div>
+                        </div>
+
+                        <div class="fcolor" style="background-color: #6ae33e;">
+                            <div class="check" id="c03" onclick="check3()">
+                                <img class="imgCheck" src="image/check.png" alt="check_valid">
+                            </div>
+                        </div>
+
+                        <div class="fcolor" style="background-color: #68a158;">
+                            <div class="check" id="c04" onclick="check4()">
+                                <img class="imgCheck" src="image/check.png" alt="check_valid">
+                            </div>
+                        </div>
+
+                        <div class="fcolor" style="background-color: #b1dca4;">
+                            <div class="check" id="c05" onclick="check5()">
+                                <img class="imgCheck" src="image/check.png" alt="check_valid">
+                            </div>
+                        </div>
+
+                        <div class="fcolor" style="background-color: #6f933c;">
+                            <div class="check" id="c06" onclick="check6()">
+                                <img class="imgCheck" src="image/check.png" alt="check_valid">
+                            </div>
+                        </div>
+
+                        <div class="fcolor" style="background-color: #c6eea2;">
+                            <div class="check" id="c07" onclick="check7()">
+                                <img class="imgCheck" src="image/check.png" alt="check_valid">
+                            </div>
+                        </div>
+
+                        <div class="fcolor" style="background-color: #87c77c;">
+                            <div class="check" id="c08" onclick="check8()">
+                                <img class="imgCheck" src="image/check.png" alt="check_valid">
+                            </div>
+                        </div>
+
+                        <div class="fcolor" style="background-color: #27c667;">
+                            <div class="check" id="c09" onclick="check9()">
+                                <img class="imgCheck" src="image/check.png" alt="check_valid">
+                            </div>
+                        </div>
+
+                        <div class="fcolor" style="background-color: gray;">
+                            <div class="check" id="c010" onclick="check10()">
+                                <img class="imgCheck" src="image/check.png" alt="check_valid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="droite">
+            <div class="der01">
+                <div class="deroulant_sortBy">
+                    <select id="deroulant01">
+                        <option value="Popular">Classé par popularité</option>
+                        <option value="Relevance">Pertinence</option>
+                        <option value="decreasing_price">Prix décroissant</option>
+                        <option value="ascending_price">Prix croissant</option>
+                        <option value="date">Date</option>
+                        <option value="alphabetical">Ordre alphabétique</option>
+                    </select>
+                </div>
+
+                <div class="nbr_item">
+                    <p>1003 Produits affichés</p>
+                </div>
+            </div>
+
+            <div class="card_item">
+          
+                <div class="block">
+                    <div class="block_img">
+                        <div class="test">
+                            <img src="image/page2item/Chameau_vert.png" class="imgp2" alt="image_article">
+                        </div>
+                    </div>
+                    <div class="block_text">
+                        <div class="nomPara">
+                            <div class="nom">
+                                <p><a href="pageArticle.html">Chameau Vert</a></p>
+                            </div>
+                            <div class="parametre" style="background-color: #6ae33e;">
+                                <div class="paraColor"></div>
+                            </div>
+                        </div>
+                        <div class="prix">
+                            <p>8900 €</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block">
+                    <div class="block_img">
+                        <div class="test">
+                            <img src="image/page2item/Cartes_poker.png" class="imgp2" alt="image_article">
+                        </div>
+                    </div>
+                    <div class="block_text">
+                        <div class="nomPara">
+                            <div class="nom">
+                                <p><a href="pageArticle.html">Poker - Camel Edition</a></p>
+                            </div>
+                            <div class="parametre" style="background-color: #6f933c;">
+                                <div class="paraColor"></div>
+                            </div>
+                        </div>
+                        <div class="prix">
+                            <p>29,99 €</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block">
+                    <div class="block_img">
+                        <div class="test">
+                            <img src="image/page2item/Casquette.png" class="imgp2" alt="image_article">
+                        </div>
+                    </div>
+                    <div class="block_text">
+                        <div class="nomPara">
+                            <div class="nom">
+                                <p><a href="pageArticle.html">Casquette - Camel Edition</a></p>
+                            </div>
+                            <div class="parametre" style="background-color: #228665;">
+                                <div class="paraColor"></div>
+                            </div>
+                        </div>
+                        <div class="prix">
+                            <p>22.37 €</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block">
+                    <div class="block_img">
+                        <div class="test">
+                            <img src="image/blanc/Backpack-front.png" class="imgp2" alt="image_article">
+                        </div>
+                    </div>
+                    <div class="block_text">
+                        <div class="nomPara">
+                            <div class="nom">
+                                <p><a href="pageArticle.html">Sac à dos - Camel Edition</a></p>
+                            </div>
+                            <div class="parametre" style="background-color: gray;">
+                                <div class="paraColor"></div>
+                            </div>
+                        </div>
+                        <div class="prix">
+                            <p>59.99 €</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block">
+                    <div class="block_img">
+                        <div class="test">
+                            <img src="image/page2item/Claquettes.png" class="imgp2" alt="image_article">
+                        </div>
+                    </div>
+                    <div class="block_text">
+                        <div class="nomPara">
+                            <div class="nom">
+                                <p><a href="pageArticle.html">Claquettes Silk-Path</a></p>
+                            </div>
+                            <div class="parametre" style="background-color: #27c667;">
+                                <div class="paraColor"></div>
+                            </div>
+                        </div>
+                        <div class="prix">
+                            <p>29,99 €</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block">
+                    <div class="block_img">
+                        <div class="test">
+                            <img src="image/page2item/Masque_nuit.png" class="imgp2" alt="image_article">
+                        </div>
+                    </div>
+                    <div class="block_text">
+                        <div class="nomPara">
+                            <div class="nom">
+                                <p><a href="pageArticle.html">Masque de Nuit Vert</a></p>
+                            </div>
+                            <div class="parametre" style="background-color: green;">
+                                <div class="paraColor"></div>
+                            </div>
+                        </div>
+                        <div class="prix">
+                            <p>8.60 €</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block">
+                    <div class="block_img">
+                        <div class="test">
+                            <img src="image/page2item/Masque.png" class="imgp2" alt="image_article">
+                        </div>
+                    </div>
+                    <div class="block_text">
+                        <div class="nomPara">
+                            <div class="nom">
+                                <p><a href="pageArticle.html">Masque - Camel Edition</a></p>
+                            </div>
+                            <div class="parametre" style="background-color: #6f933c;">
+                                <div class="paraColor"></div>
+                            </div>
+                        </div>
+                        <div class="prix">
+                            <p>10.00 €</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block">
+                    <div class="block_img">
+                        <div class="test">
+                            <img src="image/page2item/Sweat.png" class="imgp2" alt="image_article">
+                        </div>
+                    </div>
+                    <div class="block_text">
+                        <div class="nomPara">
+                            <div class="nom">
+                                <p><a href="pageArticle.html">Sweat Silk-Path</a></p>
+                            </div>
+                            <div class="parametre" style="background-color: #27c667;">
+                                <div class="paraColor"></div>
+                            </div>
+                        </div>
+                        <div class="prix">
+                            <p>54.99 €</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block">
+                    <div class="block_img">
+                        <div class="test">
+                            <img src="image/page2item/TPS.png" class="imgp2" alt="image_article">
+                        </div>
+                    </div>
+                    <div class="block_text">
+                        <div class="nomPara">
+                            <div class="nom">
+                                <p><a href="pageArticle.html">Tapis de Souris Silk-Path</a></p>
+                            </div>
+                            <div class="parametre" style="background-color: #27c667;">
+                                <div class="paraColor"></div>
+                            </div>
+                        </div>
+                        <div class="prix">
+                            <p>$19.30</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="a_bottom">
+                <input type="button" value="Afficher plus de produit" class="b01">
+            </div>
+
+        </div>
+    </div>
+
+        <!-- footer -->
+  <footer class="footer">
+          <div class="content">
+              <h5>Inscrivez-vous à la Newsletter !</h5>
+              <p>
+                  Soyez au courant de nos dernières nouveautés, peut-être seriez vous chanceux d'être présent à une vente limitée ?!
+              </p>
+              <form>
+                  <div class="inputContainer">
+                      <input type="text" class="input" required>
+                      <label class="label">Adresse E-mail</label>
+                  </div>
+                  <div class="valider">
+                    <button class="btn41-43 btn-43">
+                      Sign Up
+                    </button>
+                  </div>
+              </form>
+          </div>
+          <div class="content-footer">
+              <div class="content">
+                  <h6>Boutique</h6>
+                  <ul class="footer-links">
+                      <li><a href="#">Homme</a></li>
+                      <li><a href="#">Femme</a></li>
+                      <li><a href="#">Enfant</a></li>
+                      <li><a href="#">Accessoires</a></li>
+                      <li><a href="#">Décorations</a></li>
+                  </ul>
+              </div>
+              <div class="content">
+                  <h6>Aide</h6>
+                  <ul class="footer-links">
+                      <li><a href="#">Centre d'aide</a></li>
+                      <li><a href="#">Suivi de commande</a></li>
+                      <li><a href="#">Tableau des Tailles</a></li>
+                      <li><a href="#">Retour et Garantie</a></li>
+                      <li><a href="#">Contactez-Nous</a></li>
+                  </ul>
+              </div>
+              <div class="content">
+                  <h6>A Propos</h6>
+                  <ul class="footer-links">
+                  <li><a href="#">A Propos de Nous</a></li>
+                  <li><a href="#">Responsabilité</a></li>
+                  <li><a href="#">Apprenez notre histoire</a></li>
+                  </ul>
+              </div>
+          </div>
+  </footer>
+    <script src="style/page2.js"></script>
+</body>
+</html>

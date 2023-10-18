@@ -1,0 +1,271 @@
+
+body{
+    margin  : 0      ;
+    padding : 0      ;
+    color   :black ;
+}
+
+nav{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+}
+
+.menuNavigation{
+    
+    position            : sticky             ;
+    display             : flex               ;
+    align-items         : center             ;  
+    padding-top         : 25px               ;
+    padding-bottom      : 25px               ;    
+    width               : 100%               ;
+    background-color    : black       ;
+    border-bottom       : 1px solid grey   ;
+    box-sizing          : border-box         ;
+    -webkit-user-select : none               ;
+    -moz-user-select    : none               ;
+    -ms-user-select     : none               ;
+    user-select         : none               ;
+    font-family         : 'Inter', sans-serif;
+    box-shadow          : 0px 1px 10px black;
+
+}
+.marque{
+    display         : flex  ;
+    align-items     : center;
+    text-decoration : none  ;
+    margin-left     : 50px  ;
+    margin-right    : 50px  ;
+    font-weight     : 700   ;
+    font-size       : 20px  ;
+    padding-right   : 20px  ;
+    color           : white;
+    flex-wrap       : nowrap;
+
+    
+
+}
+
+.marque p{
+    margin :    0  ;
+}
+
+div.elementGauche{
+    display : flex ;
+}
+
+.elementGauche a{
+    
+    margin-left     : 30px          ;
+    margin-right    : 50px          ;
+    font-size       : 17px          ;
+    font-weight     : 400           ;
+    text-decoration : none          ;
+    align-items     : center        ;
+    justify-content : space-between ;
+    color           :white        ;
+    display         : inline-block  ;
+    position        : relative      ;
+
+    
+}
+
+.elementGauche a::after {
+    content: "";
+    display          : block                   ;
+    position         : absolute                ;
+    bottom           : -3px                    ;
+    width            : 100%                    ;
+    height           : 1px                     ;
+    transform        : scaleX(0)               ;
+    transform-origin : left                    ;
+    background       : white                 ;
+    transition       : transform 0.3s ease-out ;
+}
+  
+.elementGauche a:hover::after{
+    transform    : scaleX(1) ;
+}
+
+div.elementDroite{
+    margin-left  : auto   ;
+    margin-right : 50px   ;
+    display      : flex   ;
+    align-items  : center ;
+}
+
+
+div.elementDroite a{
+    text-decoration : none         ;
+    margin-left     : 80px         ;
+    font-size       : 17px         ;
+    font-weight     : 400          ;
+    color           : white      ;
+    display         : inline-block ;
+    position        : relative     ;
+}
+
+div.elementDroite a::after{
+    content          : ""                      ;
+    display          : block                   ;
+    position         : absolute                ;
+    bottom           : -3px                    ;
+    width            : 100%                    ;
+    height           : 1px                     ;
+    transform        : scaleX(0)               ;
+    transform-origin : left                    ;
+    background       : white                 ;
+    transition       : transform 0.2s ease-out ;
+}
+  
+div.elementDroite a:hover::after{
+    transform     : scaleX(1);
+}
+
+div.panier{
+    align-items   : center;
+    margin-right  : 30px  ;
+    margin-left   : 30px  ;
+}
+
+svg{
+    margin-right : 5px   ;
+}
+
+span.desactivated{
+    color       :#979797 ;
+}
+
+.loupe{    
+    margin-left : 30px     ;
+}
+
+div.elementGauche .loupe svg{
+    color:white;
+}
+
+.menuNavigation .container{
+    display :   flex    ;
+    width   :  100%;    ;
+}
+
+.burger{
+    display :   none    ;
+}
+
+
+/* MEDIA QUERY */
+@media screen and (max-width : 940px) {
+    
+
+    div.elementGauche{
+        display:flex;
+        flex-direction: column;
+        margin:0;
+        align-items: baseline;
+        width: 100px;
+    }
+
+    div.elementGauche a{
+        margin:0;
+        margin-bottom:20px;
+        color:white;
+    }
+
+    div.elementGauche a.premierEl{
+        margin-top:1vh;
+    }
+
+    div.elementGauche .loupe{
+        margin:0;
+        margin-bottom:20px;
+    }
+
+    div.elementGauche .loupe svg{
+        color:red
+    }
+
+    div.elementGauche a::after{
+        background: white;
+    }
+
+
+    div.elementDroite{
+        display: flex;
+        flex-direction: column;
+        margin:0;
+        align-items: baseline;
+        width: 100px ;
+    }
+
+    div.elementDroite a{
+        margin:0;
+        color:white;
+    }
+
+    div.elementDroite a.dernierEl{
+        margin-bottom:1vh;
+        margin-top:20px;
+    }
+
+
+    div.elementDroite a::after{
+        background: white;
+    }
+    
+    span.panier{
+        margin-bottom: 20px;
+        color:white;
+    }
+    span.panier svg{
+        color:rgb(250, 0, 0);
+    }
+
+
+
+    .menuNavigation{
+        background-color:black;
+        transition : all 0.5s;
+    }
+
+    .menuNavigation .container{
+        
+        display: none;
+    }
+    .menuNavigation .container{        
+        margin:0;
+        position:absolute;
+        top:100%;
+
+        display: flex;        
+        flex-direction: column;
+        align-items: center;
+        overflow-y: hidden;
+
+        height: 0px;
+        background-color: #232525;
+        transition: .5s ease-out height;
+    }
+    .menuNavigation .container.activederoulant {
+        height: 240px;
+    }      
+
+    .marque{
+        color:white;
+    }
+
+    .burger{
+        display:block;
+        margin-left:auto;
+        margin-right:50px;
+    }
+
+    .container-el p{
+        margin-left:7vw;
+        margin-right:7vw;
+        text-align: center;
+        
+    }
+
+}
